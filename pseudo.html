@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head lang="en" >  
+    <title>Pseudo classes and pseudo elements</title>
+    <style>
+        input[type="number"]:out-of-range{
+          border:2px solid red;
+        }
+       input[type="number"]:in-range{
+          border:2px solid green;
+       }
+       input[type="email"]:invalid{
+   border:2px solid red;
+   }
+   input[type="email"]::placeholder{
+    color:blue;
+   }
+   p::first-line{
+text-decoration:underline;
+}
+p::first-letter{
+font-size:20px;
+color:red;
+}
+p::before{
+content:"KLUH";
+}
+p::after{
+content:"END";
+}
+p::selection{
+    background-color: grey;
+}
+li::marker{
+    color:orange;
+}
+.c1{
+    list-style-type: none;
+}
+.c1 li::before{
+    content:"\2605";
+    color:green;
+     margin-right:10px; 
+}
+       </style>
+    </head>
+<body>
+    <input type="number" placeholder="Enter a number" min=0 max=18 style="width:500px">
+    <br><br>
+    <input type="email" placeholder="Enter email address">
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vel voluptatum rem repudiandae sit quas? Animi quam illum placeat aperiam dolore, totam voluptas, eos expedita quasi maxime cum hic. Molestiae ipsam accusantium, itaque illo ab, aspernatur quis adipisci suscipit assumenda sed repudiandae culpa eligendi sunt nobis eaque ducimus voluptatem alias ea rerum nulla. Ut accusamus quae, beatae minus reiciendis voluptatum tempore consequatur vel, omnis nihil cumque dolores facere quia nulla soluta blanditiis harum quibusdam incidunt commodi magnam fugit. Accusamus mollitia magni ipsam, exercitationem quia, nemo eligendi nihil dolore veritatis sit consequuntur placeat earum laboriosam cumque fugiat! Repellendus facere, explicabo quam deserunt maiores voluptatibus enim. Neque beatae temporibus, veritatis architecto obcaecati debitis odio placeat, nam sint inventore, molestias non dicta eius quibusdam. Ipsum soluta totam maiores est aperiam quo impedit inventore corrupti ab voluptas, quas nisi fugit fuga, possimus, aliquam praesentium libero dicta sint sunt magnam? Atque provident minima labore quia, eos, sint, officia ducimus voluptates dicta maxime natus quas a laudantium commodi? Earum eius dolorem et distinctio, architecto praesentium iusto ex amet asperiores? Nostrum dignissimos veritatis debitis ea quam exercitationem delectus modi illo nemo sapiente quasi a, aliquid error quisquam. Dolore asperiores error totam nobis, omnis quod quaerat in dicta!
+    </p>
+    <ul>
+        <li>KLU
+        <li> ExcelR
+        <li>FSD
+    </ul>
+    <ul class="c1">
+        <li>CTSD
+        <li>DS
+        <li>Java
+    </ul>
+ 
+</body>
+
+</html>
